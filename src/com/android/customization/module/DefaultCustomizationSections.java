@@ -107,7 +107,7 @@ public final class DefaultCustomizationSections implements CustomizationSections
             DisplayUtils displayUtils,
             WallpaperQuickSwitchViewModel wallpaperQuickSwitchViewModel,
             WallpaperInteractor wallpaperInteractor) {
-        List<CustomizationSectionController<?>> sectionControllers = new ArrayList<>();
+        final List<CustomizationSectionController<?>> sectionControllers = new ArrayList<>();
 
         // Wallpaper section.
         sectionControllers.add(
@@ -185,6 +185,13 @@ public final class DefaultCustomizationSections implements CustomizationSections
                                 mThemedIconInteractor,
                                 savedInstanceState,
                                 mThemedIconSnapshotRestorer));
+
+                // Custom themed icon pack section.
+                sectionControllers.add(
+                        new ThemedIconPackSectionController(
+                                activity, sectionNavigationController,
+                                ThemedIconSwitchProvider.getInstance(activity),
+                                lifecycleOwner, savedInstanceState));
 
                 // App grid section.
                 sectionControllers.add(
