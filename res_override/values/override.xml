@@ -40,5 +40,11 @@
         <item>com.android.contacts</item>
         <item>com.android.dialer</item>
         <item>com.android.gallery3d</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.apps.photos</item>
+        <item>com.google.android.apps.docs</item>
+        <item>com.google.android.youtube</item>
+        <item>com.android.vending</item>
     </array>
 </resources>
