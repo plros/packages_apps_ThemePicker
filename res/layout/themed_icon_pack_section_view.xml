@@ -50,7 +50,7 @@
         android:layout_width="@dimen/option_tile_width"
         android:layout_height="@dimen/option_tile_width"
         android:scaleType="center"
-        android:src="@drawable/ic_extension"
+        android:src="@drawable/ic_custom_themed_icons"
         android:background="@drawable/option_border_color" />
 
 </com.android.customization.picker.themedicon.ThemedIconPackSectionView>
